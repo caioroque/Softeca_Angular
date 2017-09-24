@@ -17,6 +17,7 @@ import { ROUTES } from './app.routes';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuarioComponent } from './usuarios/usuario/usuario.component';
 import { CadastrarComponent } from './usuarios/cadastrar/cadastrar.component';
+import { ConsultarComponent } from './usuarios/consultar/consultar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CadastrarComponent } from './usuarios/cadastrar/cadastrar.component';
     HomeComponent,
     UsuariosComponent,
     UsuarioComponent,
-    CadastrarComponent
+    CadastrarComponent,
+    ConsultarComponent
   ],
   imports: [
     BrowserModule,

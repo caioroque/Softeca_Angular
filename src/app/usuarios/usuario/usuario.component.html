@@ -1,3 +1,14 @@
-<p>
-  usuario works!
-</p>
+<a href="#">
+  <div class="place-info-box">
+
+      <p>The content is {{usuarioModel.nome}}</p>
+    <div *ngIf="usuarioModel">
+      <div class="place-info-box-content">
+        <span class="place-info-box-text">{{ usuarioModel.nome }} {{ usuarioModel.sobrenome }}</span>
+        <br/>
+        <span class="place-info-box-detail"> {{ usuarioModel.cpf }} </span>
+        <span class="place-info-box-detail"> {{ usuarioModel.data_nascimento }} </span>
+      </div>
+    </div>
+  </div>
+</a>

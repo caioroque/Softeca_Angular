@@ -22,6 +22,22 @@
       <i class="material-icons">list</i>
       Second
       <span class="badge">1</span></div>
-    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    <div class="collapsible-body">
+
+    <section class="content">
+      <div class="row">
+        <div *ngFor="let usuario of usuarios" class="col s12 m6">
+          <stf-usuario  [usuarioModel]="usuario"></stf-usuario>
+        </div>
+
+        <div class="col s12" *ngIf="usuarios?.length === 0">
+          <p class="lead text-center">
+            Não foram encontrado itens para sua busca.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    </div>
   </li>
 </ul>
