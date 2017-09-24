@@ -1,0 +1,31 @@
+<div class="row">
+
+        <form class="col s12" (submit)="cadastrar($event)">
+          <div class="row">
+            <div class="input-field col s12">
+              <input class="validate" type="text" name = "nome" [(ngModel)]="usuario.nome">
+
+              <label for="nome">Nome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <input class="validate" type="text"  name = "sobrenome" [(ngModel)]="usuario.sobrenome">
+                <label for="sobrenome">Sobrenome</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <input class="validate" type="text" name = "cpf"[(ngModel)]="usuario.cpf">
+                <label for="cpf">CPF</label>
+            </div>
+          </div>
+          <div class="row">
+              <div class="input-field col s12">
+                  <input class="validate" type="text" name = "data_nascimento"[(ngModel)]="usuario.data_nascimento">
+                  <label for="data_nascimento">Data de Nascimento</label>
+              </div>
+            </div>
+          <button type="submit" class="waves-effect waves-light btn">Enviar</button>
+  </form>
+</div>

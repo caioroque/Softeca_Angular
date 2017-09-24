@@ -15,6 +15,8 @@ import { HttpModule } from '@angular/http';
 import {HttpClientModule} from '@angular/common/http';
 import { ROUTES } from './app.routes';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuarioComponent } from './usuarios/usuario/usuario.component';
+import { CadastrarComponent } from './usuarios/cadastrar/cadastrar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
     FootnoteComponent,
     AboutComponent,
     HomeComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    UsuarioComponent,
+    CadastrarComponent
   ],
   imports: [
     BrowserModule,
