@@ -11,15 +11,11 @@ export class UsuarioComponent implements OnInit {
     @Input() usuarioModel: Usuario;
     @Input() nome: string;
     @Input() sobrenome?: string;
-    @Input() email?: string;
+    @Input() cpf?: string;
     @Input() data_nascimento?: string;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  clicked() {
-    console.log('Usuario: ' + this.usuarioModel.nome);
   }
 }

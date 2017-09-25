@@ -1,14 +1,14 @@
-<a href="#">
-  <div class="place-info-box">
-
-      <p>The content is {{usuarioModel.nome}}</p>
-    <div *ngIf="usuarioModel">
-      <div class="place-info-box-content">
-        <span class="place-info-box-text">{{ usuarioModel.nome }} {{ usuarioModel.sobrenome }}</span>
-        <br/>
-        <span class="place-info-box-detail"> {{ usuarioModel.cpf }} </span>
-        <span class="place-info-box-detail"> {{ usuarioModel.data_nascimento }} </span>
-      </div>
-    </div>
-  </div>
-</a>
+<div *ngIf="usuarioModel">
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="material-icons circle brown">person</i>
+    <span class="title">{{ usuarioModel.nome }}</span>
+    <span class= "brown lighten-4"><p>Nome: {{ usuarioModel.nome }} {{ usuarioModel.sobrenome }} </p></span>
+    <p>
+      CPF: {{ usuarioModel.cpf }} <br>
+      Data de Nascimento: {{ usuarioModel.data_nascimento }}
+    </p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</ul>
+</div>

@@ -1,3 +1,16 @@
-<p>
-  consultar works!
-</p>
+<!-- <form class="col s12" (submit)="consultar($event)"> -->
+
+<nav>
+    <div class="nav-wrapper">
+      <form class="col s12" (submit)="load($event)">
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+          <button (click)="load(usuario.id)" class="waves-effect waves-light btn right">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+<!-- </form> -->
