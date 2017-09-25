@@ -18,6 +18,10 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UsuarioComponent } from './usuarios/usuario/usuario.component';
 import { CadastrarComponent } from './usuarios/cadastrar/cadastrar.component';
 import { ConsultarComponent } from './usuarios/consultar/consultar.component';
+import { EmprestimosComponent } from './emprestimos/emprestimos.component';
+import { LivrosComponent } from './livros/livros.component';
+import { CadastrarLivroComponent } from './livros/cadastrar-livro/cadastrar-livro.component';
+import { LivroComponent } from './livros/livro/livro.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ConsultarComponent } from './usuarios/consultar/consultar.component';
     UsuariosComponent,
     UsuarioComponent,
     CadastrarComponent,
-    ConsultarComponent
+    ConsultarComponent,
+    EmprestimosComponent,
+    LivrosComponent,
+    CadastrarLivroComponent,
+    LivroComponent
   ],
   imports: [
     BrowserModule,

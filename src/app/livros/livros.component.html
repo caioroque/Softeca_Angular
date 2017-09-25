@@ -1,0 +1,36 @@
+<ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">add</i>
+        Adicionar
+        <span class="new badge">4</span></div>
+      <div class="collapsible-body">
+        <stf-cadastrar-livro></stf-cadastrar-livro>
+      </div>
+    </li>
+
+
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">list</i>
+        Todos
+        <span class="badge">1</span></div>
+      <div class="collapsible-body">
+
+      <section class="content">
+        <div class="row">
+          <div *ngFor="let livro of livros" class="col s12 m6">
+            <stf-livro  [livroModel]="livro"></stf-livro>
+          </div>
+
+          <div class="col s12" *ngIf="livros?.length === 0">
+            <p class="lead text-center">
+              Não foram encontrado itens.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      </div>
+    </li>
+  </ul>

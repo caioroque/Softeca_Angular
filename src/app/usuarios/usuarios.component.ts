@@ -14,7 +14,7 @@ export class UsuariosComponent implements OnInit {
 
     constructor(@Inject(Http) http) {
 
-      http.get('http://localhost:8080/Softeca/rest/servicos/user/allUsers')
+      http.get('http://localhost:8080/Softeca/rest/servicos/user/todos')
       .map( res => {
         return res.json();
       })

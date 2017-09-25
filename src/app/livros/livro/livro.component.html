@@ -1,0 +1,15 @@
+<div *ngIf="livroModel">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle brown">book</i>
+        <span class="title">{{ livroModel.nome }}</span>
+        <span class= "brown lighten-4"><p>Titulo: {{ livroModel.titulo }}: {{ livroModel.subtitulo }} </p></span>
+        <p>
+          Autor: {{ livroModel.autor }} <br>
+          ISBN: {{ livroModel.isbn }} <br>
+          Genero: {{ livroModel.genero }}
+        </p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </ul>
+    </div>

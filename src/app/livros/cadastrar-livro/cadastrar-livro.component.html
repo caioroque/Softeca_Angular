@@ -1,0 +1,36 @@
+<div class="row">
+
+            <form class="col s12" (submit)="cadastrar($event)">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input class="validate" type="text" name = "titulo" [(ngModel)]="livro.titulo">
+                  <label for="titulo">Título</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <input class="validate" type="text"  name = "subtitulo" [(ngModel)]="livro.subtitulo">
+                    <label for="subtitulo">Subtítulo</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                    <input class="validate" type="text" name = "autor"[(ngModel)]="livro.autor">
+                    <label for="autor">Autor</label>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input class="validate" type="text" name = "isbn"[(ngModel)]="livro.isbn">
+                      <label for="isbn">ISBN</label>
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input class="validate" type="text" name = "genero"[(ngModel)]="livro.genero">
+                      <label for="genero">Genêro</label>
+                  </div>
+                </div>
+              <button type="submit" class="waves-effect waves-light btn">Enviar</button>
+      </form>
+    </div>
